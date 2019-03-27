@@ -1,0 +1,123 @@
+EESchema Schematic File Version 4
+LIBS:Battery-cache
+EELAYER 26 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Device:Battery_Cell BT1
+U 1 1 5C98AD31
+P 4800 4100
+F 0 "BT1" H 4918 4196 50  0000 L CNN
+F 1 "Battery_Cell" H 4918 4105 50  0000 L CNN
+F 2 "Battery_Holders:1059" V 4800 4160 50  0001 C CNN
+F 3 "https://eu.mouser.com/datasheet/2/215/059-745370.pdf" V 4800 4160 50  0001 C CNN
+	1    4800 4100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4800 3900 4800 3750
+Wire Wire Line
+	4800 4200 4800 4350
+$Comp
+L power:GND #PWR04
+U 1 1 5C98ADAD
+P 4800 4350
+F 0 "#PWR04" H 4800 4100 50  0001 C CNN
+F 1 "GND" H 4805 4177 50  0000 C CNN
+F 2 "" H 4800 4350 50  0001 C CNN
+F 3 "" H 4800 4350 50  0001 C CNN
+	1    4800 4350
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3.3V #PWR03
+U 1 1 5C98ADED
+P 4800 3750
+F 0 "#PWR03" H 4800 3600 50  0001 C CNN
+F 1 "+3.3V" H 4815 3923 50  0000 C CNN
+F 2 "" H 4800 3750 50  0001 C CNN
+F 3 "" H 4800 3750 50  0001 C CNN
+	1    4800 3750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x02 J1
+U 1 1 5C98AE6E
+P 3650 4100
+F 0 "J1" H 3570 3775 50  0000 C CNN
+F 1 "Conn_01x02" H 3570 3866 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 3650 4100 50  0001 C CNN
+F 3 "~" H 3650 4100 50  0001 C CNN
+	1    3650 4100
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:PWR_FLAG #FLG01
+U 1 1 5C98AEFD
+P 4000 3900
+F 0 "#FLG01" H 4000 3975 50  0001 C CNN
+F 1 "PWR_FLAG" V 4000 4028 50  0000 L CNN
+F 2 "" H 4000 3900 50  0001 C CNN
+F 3 "~" H 4000 3900 50  0001 C CNN
+	1    4000 3900
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	3850 4000 4000 4000
+Wire Wire Line
+	4000 4000 4000 3900
+Wire Wire Line
+	3850 4100 4000 4100
+Wire Wire Line
+	4000 4100 4000 4200
+Connection ~ 4000 3900
+Wire Wire Line
+	4000 3900 4000 3750
+$Comp
+L power:PWR_FLAG #FLG02
+U 1 1 5C98AF8E
+P 4000 4200
+F 0 "#FLG02" H 4000 4275 50  0001 C CNN
+F 1 "PWR_FLAG" V 4000 4328 50  0000 L CNN
+F 2 "" H 4000 4200 50  0001 C CNN
+F 3 "~" H 4000 4200 50  0001 C CNN
+	1    4000 4200
+	0    1    1    0   
+$EndComp
+Connection ~ 4000 4200
+Wire Wire Line
+	4000 4200 4000 4300
+$Comp
+L power:GND #PWR02
+U 1 1 5C98AF9F
+P 4000 4300
+F 0 "#PWR02" H 4000 4050 50  0001 C CNN
+F 1 "GND" H 4005 4127 50  0000 C CNN
+F 2 "" H 4000 4300 50  0001 C CNN
+F 3 "" H 4000 4300 50  0001 C CNN
+	1    4000 4300
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3.3V #PWR01
+U 1 1 5C98AFAE
+P 4000 3750
+F 0 "#PWR01" H 4000 3600 50  0001 C CNN
+F 1 "+3.3V" H 4015 3923 50  0000 C CNN
+F 2 "" H 4000 3750 50  0001 C CNN
+F 3 "" H 4000 3750 50  0001 C CNN
+	1    4000 3750
+	1    0    0    -1  
+$EndComp
+$EndSCHEMATC
